@@ -29,4 +29,4 @@ R - jobs
 R - bg %2 ps | grep sleep
 
 9 - Termine a execução de todos os processos sleep (mate os processos) .
-R - killall sleep
+R - kill all sleep
