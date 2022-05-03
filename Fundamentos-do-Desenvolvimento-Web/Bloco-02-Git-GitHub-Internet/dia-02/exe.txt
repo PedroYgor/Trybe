@@ -8,3 +8,4 @@
 - Git
 - HTML
 - CSS	
+- JavaScript
