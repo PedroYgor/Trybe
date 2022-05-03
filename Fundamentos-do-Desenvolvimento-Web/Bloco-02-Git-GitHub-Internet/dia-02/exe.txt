@@ -1,0 +1,10 @@
+ 3 - Crie uma nova branch com o nome trybe-skills-changes e faça checkout nela;
+ R - git checkout -b trybe-new-branch
+ 
+ 4 - No arquivo .txt, ao final da lista de habilidades , adicione mais duas habilidades que serão desenvolvidas na Trybe:
+ R - cat >> exe.txt
+- Unix
+- Bash
+- Git
+- HTML
+- CSS	
