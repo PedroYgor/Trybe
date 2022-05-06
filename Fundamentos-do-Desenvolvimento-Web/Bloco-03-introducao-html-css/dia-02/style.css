@@ -1,0 +1,30 @@
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 65px;
+  color: orange;
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: overline;
+}
+
+p {
+  font-size: 3em;
+  font-weight: 600;
+  font-style: italic;
+}
+
+ul {
+  background-color: chartreuse;
+}
+
+li {
+  line-height: 35px;
+  background-color: aqua;
+}
+
+.modifica {
+  background-color: cadetblue;
+}
