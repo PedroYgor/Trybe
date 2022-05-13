@@ -44,14 +44,29 @@ else console.log('Você digitou zero :/')
 
 // Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
 //5
-const angulo1 = -30
-const angulo2 = 60
-const angulo3 = 90
-let somaAngulo = angulo1 + angulo2 + angulo3
 
 if (angulo1 < 0 || angulo2 < 0 || angulo3 < 0) console.log('Valor inválido')
 else if (somaAngulo == 180) console.log(true)
 else console.log(false)
+
+// Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
+//5 //Alternativo
+const angulo1 = 30
+const angulo2 = 60
+const angulo3 = 90
+let somaAngulo = angulo1 + angulo2 + angulo3
+if (angulo1 < 0 || angulo2 < 0 || angulo3 < 0) console.log('Valor inválido')
+else {
+  switch (somaAngulo) {
+    case 180:
+      console.log(true)
+      break
+
+    default:
+      console.log(false)
+      break
+  }
+}
 
 // Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
 // Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
@@ -60,7 +75,7 @@ else console.log(false)
 // Exemplo: bishop (bispo) -> diagonals (diagonais)
 // 6
 let peca = 'CAVALO'
-switch (peca.toLocaleLowerCase()) {
+switch (peca.toLowerCase()) {
   case 'cavalo':
     console.log('Em L')
     break
@@ -84,6 +99,7 @@ switch (peca.toLocaleLowerCase()) {
   case 'pião':
     console.log('anda uma casa para frente')
     break
+
   default:
     console.log('peça passada inválida')
     break
@@ -97,34 +113,36 @@ switch (peca.toLocaleLowerCase()) {
 // Porcentagem < 50 -> F
 // O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
 // 7
-let nota = 120;
-if(nota < 0 || nota > 100) console.log("Nota Inválida");
-else if(nota >= 90) console.log('A');
-else if(nota >= 80) console.log('B');
-else if(nota >= 70) console.log('C');
-else if(nota >= 60) console.log('D');
-else if(nota >= 50) console.log('E');
-else console.log('F');
+let nota = 120
+if (nota < 0 || nota > 100) console.log('Nota Inválida')
+else if (nota >= 90) console.log('A')
+else if (nota >= 80) console.log('B')
+else if (nota >= 70) console.log('C')
+else if (nota >= 60) console.log('D')
+else if (nota >= 50) console.log('E')
+else console.log('F')
 
 // Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false.
 // Bonus: use somente um if.
 //8
-const numero1 = 8;
-const numero2 = 1;
-const numero3 = 3;
+const numero1 = 8
+const numero2 = 1
+const numero3 = 3
 
-if(numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0) console.log(true);
-else console.log(false);
+if (numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0)
+  console.log(true)
+else console.log(false)
 
 // Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar.   Caso contrário, ele retorna false.
 // Bonus: use somente um if.
 //9
-const number1 = 8;
-const number2 = 2;
-const number3 = 2;
+const number1 = 8
+const number2 = 2
+const number3 = 2
 
-if(number1 % 2 !== 0 || number2 % 2 !== 0 || number3 % 2 !== 0) console.log(true);
-else console.log(false);
+if (number1 % 2 !== 0 || number2 % 2 !== 0 || number3 % 2 !== 0)
+  console.log(true)
+else console.log(false)
 
 // Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
 // Atente que, sobre o custo do produto, incide um imposto de 20%.
@@ -133,14 +151,13 @@ else console.log(false);
 // valorCustoTotal = valorCusto + impostoSobreOCusto
 // lucro = valorVenda - valorCustoTotal (lucro de um produto)
 // 10
-const imposto = 0.2;
-const custoProduto = 100;
-const valorVenda = 150;
-const valorCustoTotal = custoProduto + imposto;
-const lucro = valorVenda - valorCustoTotal;
-const resultado = lucro * 1000;
-console.log(resultado);
-
+const imposto = 0.2
+const custoProduto = 100
+const valorVenda = 150
+const valorCustoTotal = custoProduto + custoProduto * imposto
+const lucro = valorVenda - valorCustoTotal
+const resultado = lucro
+console.log(resultado)
 
 // Questão 11
 let salarioBruto = 3000.0
@@ -151,13 +168,18 @@ const ALIQUOTA_INSS_2 = salarioBruto * 0.09
 const ALIQUOTA_INSS_3 = salarioBruto * 0.11
 const ALIQUOTA_INSS_4 = salarioBruto - 570.88
 
-if (salarioBruto < 1556.94 && salarioBruto > 0)
+if (salarioBruto < 1556.94 && salarioBruto > 0) {
   salarioLiquido = salarioBruto - ALIQUOTA_INSS_1
-else if (salarioBruto >= 1556.94 && salarioBruto <= 2594.92)
+}
+else if (salarioBruto >= 1556.94 && salarioBruto <= 2594.92) {
   salarioLiquido = salarioBruto - ALIQUOTA_INSS_2
-else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82)
+} 
+else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82) {
   salarioLiquido = salarioBruto - ALIQUOTA_INSS_3
-else if (salarioBruto > 5189.82) salarioLiquido = salarioBruto - ALIQUOTA_INSS_4
+} 
+else if (salarioBruto > 5189.82) {
+  salarioLiquido = salarioBruto - ALIQUOTA_INSS_4
+} 
 else console.log('Valor Inválido')
 
 const IR_1 = salarioLiquido * 0.075 - 142.8
