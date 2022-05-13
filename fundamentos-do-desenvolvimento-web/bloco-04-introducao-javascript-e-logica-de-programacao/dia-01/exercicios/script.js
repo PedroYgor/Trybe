@@ -151,16 +151,16 @@ else console.log(false)
 // valorCustoTotal = valorCusto + impostoSobreOCusto
 // lucro = valorVenda - valorCustoTotal (lucro de um produto)
 // 10
-const imposto = 0.2
-const custoProduto = 100
-const valorVenda = 150
-const valorCustoTotal = custoProduto + custoProduto * imposto
-const lucro = valorVenda - valorCustoTotal
-const resultado = lucro
-console.log(resultado)
+const imposto = 0.2;
+const custoProduto = 100;
+const valorVenda = 150;
+const valorCustoTotal = custoProduto + (custoProduto * imposto);
+const lucro = valorVenda - valorCustoTotal;
+const resultado = lucro * 1000;
+custoProduto < 0 || valorVenda < 0 ? console.log('Erro') : console.log(resultado);
 
 // Questão 11
-let salarioBruto = 3000.0
+let salarioBruto = 4000.0
 let salarioLiquido = 0
 
 const ALIQUOTA_INSS_1 = salarioBruto * 0.08
@@ -180,7 +180,7 @@ else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82) {
 else if (salarioBruto > 5189.82) {
   salarioLiquido = salarioBruto - ALIQUOTA_INSS_4
 } 
-else console.log('Valor Inválido')
+else console.log('Valor Inválido');
 
 const IR_1 = salarioLiquido * 0.075 - 142.8
 const IR_2 = salarioLiquido * 0.15 - 354.8
