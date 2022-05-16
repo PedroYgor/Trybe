@@ -29,6 +29,8 @@ console.log(bigWord, smallWord);
 // Um número primo é aquele divisível apenas por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 0 e 50.
 let contador = 0;
 let primo = 2;
+//Eu usei o Math.sqrt() pois tem uma regra matemática que diz que se um número não tem outro divisor comum além do 1 até sua raiz ele é 
+// um número primo
 for(let i = 3; i <= 50; i++){
   for(let j = 1; j <= Math.sqrt(i); j++){
     if(i%j == 0) contador++;
