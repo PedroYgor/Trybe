@@ -89,11 +89,10 @@ console.log(somatorio(5));
 //7 - Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word.
 
 function verificaFimPalavra(word, ending){
-  if(word.length < ending.length) return `Palavra muito pequena`;
+  if(word.length < ending.length) return `Palavra pequena`;
   let tamanho = ending.length;
   let substr = word.slice(-tamanho);
   if(ending === substr) return true;
   return false; 
 }
-
 console.log(verificaFimPalavra('trybe', 'be'));
