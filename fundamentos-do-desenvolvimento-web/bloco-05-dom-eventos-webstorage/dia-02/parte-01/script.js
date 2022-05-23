@@ -23,3 +23,24 @@ elementoOndeVoceEsta.nextElementSibling
 
 // Agora acesse o terceiroFilho a partir de pai.
 pai.children[2];
+
+// PARTE 2
+
+// 1 Crie um irmão para elementoOndeVoceEsta.
+let section = document.createElement('section')
+section.setAttribute('class', 'irmaozinho')
+pai.appendChild(section)
+
+// 2 Crie um filho para elementoOndeVoceEsta.
+let sectionFilha = document.createElement('section')
+sectionFilha.setAttribute('class', 'filha')
+elementoOndeVoceEsta.appendChild(sectionFilha)
+
+// 3 Crie um filho para primeiroFilhoDoFilho.
+let sectionFilhoDoFilho = document.createElement('section')
+sectionFilhoDoFilho.setAttribute('class', 'filhoDoFilhoDoFilho')
+filhoDoFilho.appendChild(sectionFilhoDoFilho)
+
+// 4 A partir desse filho criado, acesse terceiroFilho.
+let fff = filhoDoFilho.firstElementChild
+fff.parentNode.parentNode.parentNode.children[2]
