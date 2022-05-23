@@ -44,3 +44,21 @@ filhoDoFilho.appendChild(sectionFilhoDoFilho)
 // 4 A partir desse filho criado, acesse terceiroFilho.
 let fff = filhoDoFilho.firstElementChild
 fff.parentNode.parentNode.parentNode.children[2]
+
+// PARTE 3
+
+// 1 Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+for (const iterator of pai.childNodes) {
+  if(iterator.id !== 'elementoOndeVoceEsta') 
+    pai.removeChild(iterator)
+}
+for (const iterator of pai.children) {
+  if(iterator.id !== 'elementoOndeVoceEsta') 
+    pai.removeChild(iterator)
+}
+let quartoFilho = document.getElementById('quartoEUltimoFilho')
+pai.removeChild(quartoFilho)
+
+elementoOndeVoceEsta.children[1].remove()
+elementoOndeVoceEsta.children[1].remove()
+elementoOndeVoceEsta.firstElementChild.firstElementChild.remove()
