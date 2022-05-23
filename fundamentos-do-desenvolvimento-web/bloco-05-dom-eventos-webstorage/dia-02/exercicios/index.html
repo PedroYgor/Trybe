@@ -57,6 +57,7 @@
   </head>
   <body>
     <script>
+      // 1 
       let body = document.querySelector('body')
       function criarTag(tag) {
         return document.createElement(tag)
@@ -64,6 +65,13 @@
       let h1 = criarTag('h1')
       h1.innerText = 'Exercício 5.2 - JavaScript DOM'
       body.appendChild(h1)
+
+      // 2
+      let main = criarTag('main')
+      main.setAttribute('class', 'main-content')
+      body.appendChild(main)
+
+      
     </script>
   </body>
 </html>
