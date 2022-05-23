@@ -14,9 +14,11 @@
       // 1 Recupere o elemento que contém o título da página e faça algo com ele, como alterá-lo para o nome do seu filme favorito.
       let titulo = document.getElementById('page-title');
       titulo.innerText = 'Parasita';
+
       // 2 Agora recupere o segundo parágrafo e use sua criatividade para alterá-lo.
       let secondParagraph = document.getElementById('second-paragraph');
       secondParagraph.style.fontStyle = 'italic';
+      
       // 3 Por fim, recupere o subtítulo e altere-o também.
       let subtitle = document.getElementById('subtitle');
       subtitle.style.color = 'gray';
@@ -25,7 +27,9 @@
       // getElementsByClassName()
       // Recupere os seus parágrafos via código JavaScript, usando a função getElementsByClassName;
       let paragrafo = document.getElementsByClassName('paragrafo');
-      
+      paragrafo[0].style.fontSize = '30px';
+      let h4 = document.getElementsByTagName('h4');
+      h4[0].style.color = 'green';
       
     </script>
   </body>
