@@ -129,3 +129,13 @@ function zoomOnTextDays() {
   }
 }
 zoomOnTextDays()
+
+// exercício 7
+function addTasks(tarefa) {
+  const myTasks = document.querySelector('.my-tasks')
+  let span = document.createElement('span')
+  span.innerText = tarefa;
+  myTasks.appendChild(span);
+}
+
+addTasks('Cozinhar');
