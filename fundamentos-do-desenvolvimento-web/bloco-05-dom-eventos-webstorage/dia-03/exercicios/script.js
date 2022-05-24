@@ -23,6 +23,15 @@ function createDaysOfMonths() {
     let dayOfMonthItem = document.createElement('li');
     dayOfMonthItem.setAttribute('class', 'day');
     dayOfMonthItem.innerHTML = dayOfMonth;
+    
+    if(dezDaysList[i] === 24 || dezDaysList[i] === 31) {
+      dayOfMonthItem.setAttribute('class', 'day holiday');
+    }
+
+    if(dezDaysList[i] === 4 || dezDaysList[i] === 11 || dezDaysList[i] === 18) {
+      dayOfMonthItem.setAttribute('class', 'day friday');
+    }
+    if(dezDaysList[i] === 25) dayOfMonthItem.setAttribute('class', 'day friday holiday');
 
     days.appendChild(dayOfMonthItem);
   }
@@ -43,3 +52,15 @@ function createBtnHoliday(feriados) {
 createBtnHoliday('Feriados');
 
 // Exercício 3
+const btnHoliday = document.querySelector('#btn-holiday');
+const holiday = document.querySelectorAll('.holiday');
+
+btnHoliday.addEventListener('click', () => {
+  for (const iterator of holiday) {
+    if(iterator.style.backgroundColor === 'red') {
+      iterator.style.backgroundColor = '#eee'
+    } else {
+      iterator.style.backgroundColor = 'red';
+    }
+  }
+});
