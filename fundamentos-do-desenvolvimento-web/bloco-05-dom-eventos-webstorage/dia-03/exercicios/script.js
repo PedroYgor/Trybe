@@ -97,7 +97,6 @@ function createBtnFriday(dia) {
 
 createBtnFriday('Sexta-feira')
 
-
 // Exercício 5
 function addcolorTextFriday() {
   const btnFriday = document.querySelector('#btn-friday')
@@ -116,14 +115,14 @@ function addcolorTextFriday() {
 
 addcolorTextFriday()
 
-// Exercício 6 
+// Exercício 6
 function zoomOnTextDays() {
   const days = document.querySelectorAll('.day')
   for (const iterator of days) {
-    iterator.addEventListener('mouseover', (e) => {
+    iterator.addEventListener('mouseover', e => {
       e.target.style.fontSize = '25px'
     })
-    iterator.addEventListener('mouseout', (e) => {
+    iterator.addEventListener('mouseout', e => {
       e.target.style.fontSize = '20px'
     })
   }
@@ -134,19 +133,19 @@ zoomOnTextDays()
 function addTasks(tarefa) {
   const myTasks = document.querySelector('.my-tasks')
   let span = document.createElement('span')
-  span.innerText = tarefa;
-  myTasks.appendChild(span);
+  span.innerText = tarefa
+  myTasks.appendChild(span)
 }
 
-addTasks('Cozinhar');
+addTasks('Cozinhar')
 
 //Exercício 8
 function addColorOnTask(cor) {
   const myTasks = document.querySelector('.my-tasks')
   const div = document.createElement('div')
   div.setAttribute('class', 'task')
-  div.style.backgroundColor = cor;
-  myTasks.appendChild(div);
+  div.style.backgroundColor = cor
+  myTasks.appendChild(div)
 }
 
 addColorOnTask('#00f')
@@ -156,7 +155,7 @@ function clickDivTask() {
   const div = document.querySelector('.task')
   div.addEventListener('click', () => {
     let classes = div.getAttribute('class')
-    if(classes.includes('selected')){
+    if (classes.includes('selected')) {
       div.setAttribute('class', 'task')
     } else {
       div.setAttribute('class', 'task selected')
@@ -170,8 +169,8 @@ function changeColorDay() {
   const days = document.querySelectorAll('.day')
   const div = document.querySelector('.task')
   for (const iterator of days) {
-    iterator.addEventListener('click', (e) => {
-      if(e.target.style.color === div.style.backgroundColor) {
+    iterator.addEventListener('click', e => {
+      if (e.target.style.color === div.style.backgroundColor) {
         e.target.style.color = '#777'
       } else {
         e.target.style.color = div.style.backgroundColor
@@ -181,3 +180,33 @@ function changeColorDay() {
 }
 
 changeColorDay()
+
+// Bônus
+function addCompromisso() {
+  const btnAdd = document.querySelector('#btn-add')
+  const input = document.querySelector('#task-input')
+  const task = document.querySelector('.task-list')
+  btnAdd.addEventListener('click', () => {
+    if (input.value === '') {
+      alert('Digite algum compromisso')
+    }
+    let li = document.createElement('li')
+    li.innerText = input.value
+    input.value = ''
+    task.appendChild(li)
+  })
+
+  input.addEventListener('keyup', e => {
+    if (e.key === 'Enter') {
+      if (input.value === '') {
+        alert('Digite algum compromisso')
+      }
+      let li = document.createElement('li')
+      li.innerText = input.value
+      input.value = ''
+      task.appendChild(li)
+    }
+  })
+}
+
+addCompromisso()
