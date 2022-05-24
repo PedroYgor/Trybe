@@ -164,3 +164,20 @@ function clickDivTask() {
   })
 }
 clickDivTask()
+
+// Exercício 10
+function changeColorDay() {
+  const days = document.querySelectorAll('.day')
+  const div = document.querySelector('.task')
+  for (const iterator of days) {
+    iterator.addEventListener('click', (e) => {
+      if(e.target.style.color === div.style.backgroundColor) {
+        e.target.style.color = '#777'
+      } else {
+        e.target.style.color = div.style.backgroundColor
+      }
+    })
+  }
+}
+
+changeColorDay()
