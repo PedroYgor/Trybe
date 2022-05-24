@@ -26,7 +26,20 @@ function createDaysOfMonths() {
 
     days.appendChild(dayOfMonthItem);
   }
-  
 };
 
 createDaysOfMonths();
+
+// Exercício 2
+function createBtnHoliday(feriados) {
+  const btnContainer = document.querySelector('.buttons-container');
+  let btnHoliday = document.createElement('button');
+  btnHoliday.setAttribute('id', 'btn-holiday');
+  btnHoliday.innerText = feriados;
+
+  btnContainer.appendChild(btnHoliday);
+};
+
+createBtnHoliday('Feriados');
+
+// Exercício 3
