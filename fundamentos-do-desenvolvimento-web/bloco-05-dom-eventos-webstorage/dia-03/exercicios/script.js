@@ -96,3 +96,22 @@ function createBtnFriday(dia) {
 }
 
 createBtnFriday('Sexta-feira')
+
+
+// Exercício 5
+function addcolorTextFriday() {
+  const btnFriday = document.querySelector('#btn-friday')
+  btnFriday.addEventListener('click', () => {
+    let friday = document.querySelectorAll('.friday')
+
+    for (const iterator of friday) {
+      if (iterator.style.color === 'green') {
+        iterator.style.color = '#777'
+      } else {
+        iterator.style.color = 'green'
+      }
+    }
+  })
+}
+
+addcolorTextFriday()
