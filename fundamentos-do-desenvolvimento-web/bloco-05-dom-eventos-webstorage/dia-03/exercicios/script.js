@@ -139,3 +139,14 @@ function addTasks(tarefa) {
 }
 
 addTasks('Cozinhar');
+
+//Exercício 8
+function addColorOnTask(cor) {
+  const myTasks = document.querySelector('.my-tasks')
+  const div = document.createElement('div')
+  div.setAttribute('class', 'taks')
+  div.style.backgroundColor = cor;
+  myTasks.appendChild(div);
+}
+
+addColorOnTask('blue')
