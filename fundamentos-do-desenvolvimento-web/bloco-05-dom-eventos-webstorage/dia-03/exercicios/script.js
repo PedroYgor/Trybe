@@ -115,3 +115,17 @@ function addcolorTextFriday() {
 }
 
 addcolorTextFriday()
+
+// Exercício 6 
+function zoomOnTextDays() {
+  const days = document.querySelectorAll('.day')
+  for (const iterator of days) {
+    iterator.addEventListener('mouseover', (e) => {
+      e.target.style.fontSize = '25px'
+    })
+    iterator.addEventListener('mouseout', (e) => {
+      e.target.style.fontSize = '20px'
+    })
+  }
+}
+zoomOnTextDays()
