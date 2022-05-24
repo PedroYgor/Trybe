@@ -144,9 +144,23 @@ addTasks('Cozinhar');
 function addColorOnTask(cor) {
   const myTasks = document.querySelector('.my-tasks')
   const div = document.createElement('div')
-  div.setAttribute('class', 'taks')
+  div.setAttribute('class', 'task')
   div.style.backgroundColor = cor;
   myTasks.appendChild(div);
 }
 
-addColorOnTask('blue')
+addColorOnTask('#00f')
+
+//Exercício 9
+function clickDivTask() {
+  const div = document.querySelector('.task')
+  div.addEventListener('click', () => {
+    let classes = div.getAttribute('class')
+    if(classes.includes('selected')){
+      div.setAttribute('class', 'task')
+    } else {
+      div.setAttribute('class', 'task selected')
+    }
+  })
+}
+clickDivTask()
