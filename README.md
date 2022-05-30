@@ -8,7 +8,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ## Introdução - Fundamentos :hourglass_flowing_sand:
 
-### Bloco 1: Introdução - Uni & Shell
+### Bloco 1: Introdução - Unix & Shell
 
 - [x] 1-3: _Uni & Bash - Part 1_
 - [x] 1-4: _Uni & Bash - Part 2_
