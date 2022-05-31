@@ -42,74 +42,74 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
-- [] 6-1: _HTML & CSS - Forms_
-- [] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
-- [] 6-3: _CSS Flebo - Part 1_
-- [] 6-4: _CSS Flebo - Part 2_
-- [] 6-5: _CSS Responsivo - Mobile First_
+- [ ] 6-1: _HTML & CSS - Forms_
+- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [ ] 6-3: _CSS Flebo - Part 1_
+- [ ] 6-4: _CSS Flebo - Part 2_
+- [ ] 6-5: _CSS Responsivo - Mobile First_
 
 ### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários
 
-- [] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [] 7-2: _JavaScript ES6 - Fluo de eceção e Objetos_
-- [] 7-3: _Primeiros passos em Jest_
+- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
+- [ ] 7-2: _JavaScript ES6 - Fluo de eceção e Objetos_
+- [ ] 7-3: _Primeiros passos em Jest_
 
 ### Bloco 8: Higher Order Functions do JavaScript ES6
 
-- [] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
-- [] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
-- [] 8-5: _JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_
+- [ ] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
+- [ ] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
+- [ ] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
+- [ ] 8-5: _JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
 ### Bloco 9: JavaScript e Testes Assíncronos
 
-- [] 9-1: _JavaScript Assíncrono e Callbacks_
-- [] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
-- [] 9-3: _Jest - Testes Assíncronos_
+- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
+- [ ] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
+- [ ] 9-3: _Jest - Testes Assíncronos_
 
 ### Bloco 10: Introdução - React
 
-- [] 10-1: _'Hello, world!' no React!_
-- [] 10-2: _Componentes React_
+- [ ] 10-1: _'Hello, world!' no React!_
+- [ ] 10-2: _Componentes React_
 
 ### Bloco 11: Componentes com Estado, Eventos e Formulários com React
 
-- [] 11-1: _Components com estado e eventos_
-- [] 11-2: _Formulários no React_
+- [ ] 11-1: _Components com estado e eventos_
+- [ ] 11-2: _Formulários no React_
 
 ### Bloco 12: Ciclo de Vida de Componentes e React Router
 
-- [] 12-1: _Ciclo de vida de componentes_
-- [] 12-2: _React Router_
+- [ ] 12-1: _Ciclo de vida de componentes_
+- [ ] 12-2: _React Router_
 
 ### Bloco 13: Metodologias Ágeis
 
-- [] 13-1: _Metodologias Ágeis_
+- [ ] 13-1: _Metodologias Ágeis_
 
 ### Bloco 14: Testes automatizados com React Testing Library
 
-- [] 14-1: _RTL - Primeiros passos_
-- [] 14-2: _RTL - Mocks e Inputs_
-- [] 14-3: _RTL - Testando React Router_
+- [ ] 14-1: _RTL - Primeiros passos_
+- [ ] 14-2: _RTL - Mocks e Inputs_
+- [ ] 14-3: _RTL - Testando React Router_
 
 ### Bloco 15: Gerenciamento de estado com Redu
 
-- [] 15-1: _Introdução ao Redu - O estado global da aplicação_
-- [] 15-2: _Usando o Redu no React_
-- [] 15-3: _Usando o Redu no React - Prática_
-- [] 15-4: _Usando o Redu no React - Actions Assíncronas_
-- [] 15-5: _Testes em React-Redu_
+- [ ] 15-1: _Introdução ao Redu - O estado global da aplicação_
+- [ ] 15-2: _Usando o Redu no React_
+- [ ] 15-3: _Usando o Redu no React - Prática_
+- [ ] 15-4: _Usando o Redu no React - Actions Assíncronas_
+- [ ] 15-5: _Testes em React-Redu_
 
 ### Bloco 16: Projeto Jogo de Trivia
 
 ### Bloco 17: Contet API e React Hooks
 
-- [] 18-1: _Contet API do React_
-- [] 18-2: _React Hooks - useState e useContet_
-- [] 18-3: _React Hooks - useEffect e Hooks customizados_
+- [ ] 18-1: _Contet API do React_
+- [ ] 18-2: _React Hooks - useState e useContet_
+- [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
 
 ### Bloco 18: Projeto App de Receitas
 
@@ -117,58 +117,58 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ### Bloco 19: Docker: Utilizando Containers
 
-- [] 19-1: _Utilizando Containers - Docker_
-- [] 19-2: _Manipulação e Criação de Imagens no Docker_
-- [] 19-3: _Orquestrando Containers com Docker Compose_
+- [ ] 19-1: _Utilizando Containers - Docker_
+- [ ] 19-2: _Manipulação e Criação de Imagens no Docker_
+- [ ] 19-3: _Orquestrando Containers com Docker Compose_
 
 ### Bloco 20: Introdução à SQL
 
-- [] 20-1: _Banco de dados SQL_
-- [] 20-2: _Encontrando dados em um banco de dados_
-- [] 20-3: _Filtrando dados de forma específica_
-- [] 20-4: _Manipulando tabelas_
+- [ ] 20-1: _Banco de dados SQL_
+- [ ] 20-2: _Encontrando dados em um banco de dados_
+- [ ] 20-3: _Filtrando dados de forma específica_
+- [ ] 20-4: _Manipulando tabelas_
 
 ### Bloco 21: Funções SQL, JOINs e Normalização
 
-- [] 21-1: _Funções mais usadas no SQL_
-- [] 21-2: _Descomplicando JOINs_
-- [] 21-3: _Transformando ideias em um modelo de banco de dados_
-- [] 21-4: _Aula ao vivo + Projeto - One For All_
+- [ ] 21-1: _Funções mais usadas no SQL_
+- [ ] 21-2: _Descomplicando JOINs_
+- [ ] 21-3: _Transformando ideias em um modelo de banco de dados_
+- [ ] 21-4: _Aula ao vivo + Projeto - One For All_
 
 ### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
-- [] 22-1: _Intro - Node.js_
-- [] 22-2: _Node.js - Fluxo Assíncrono_
-- [] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
-- [] 22-4: _Express - HTTP com Node.js_
-- [] 22-5: _Express - Middlewares_
-- [] 22-6: _Atividades + Projeto - Talker Manager_
+- [ ] 22-1: _Intro - Node.js_
+- [ ] 22-2: _Node.js - Fluxo Assíncrono_
+- [ ] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
+- [ ] 22-4: _Express - HTTP com Node.js_
+- [ ] 22-5: _Express - Middlewares_
+- [ ] 22-6: _Atividades + Projeto - Talker Manager_
 
 ### Bloco 23: Introdução - NoSQL
 
-- [] 23-1: _Introdução - Arquitetura de Software_
-- [] 23-2: _Arquitetura de Software - Camada de Model_
-- [] 23-3: _Arquitetura de Software - Camada de Controller e Service_
-- [] 23-4: _Arquitetura Web - Rest e Restful_
-- [] 23-5: _Arquitetura de Software - Testando as Camadas_
+- [ ] 23-1: _Introdução - Arquitetura de Software_
+- [ ] 23-2: _Arquitetura de Software - Camada de Model_
+- [ ] 23-3: _Arquitetura de Software - Camada de Controller e Service_
+- [ ] 23-4: _Arquitetura Web - Rest e Restful_
+- [ ] 23-5: _Arquitetura de Software - Testando as Camadas_
 
 ### Bloco 24: Node.js: ORM e Autenticação
 
-- [] 24-1: _Introdução - Node.js: ORM e Autenticação_
-- [] 24-2: _ORM - Associations_
-- [] 24-3: _JWT - (JSON Web Token)_
-- [] 24-4: _Testando APIs com Testes de Integração_
+- [ ] 24-1: _Introdução - Node.js: ORM e Autenticação_
+- [ ] 24-2: _ORM - Associations_
+- [ ] 24-3: _JWT - (JSON Web Token)_
+- [ ] 24-4: _Testando APIs com Testes de Integração_
 
 ### Bloco 25: Deployment
 
-- [] 25-1: _Introdução - Deploy_
-- [] 25-2: _Deploy Docker & Heroku_
+- [ ] 25-1: _Introdução - Deploy_
+- [ ] 25-2: _Deploy Docker & Heroku_
 
 ### Bloco 26: TypeScript
 
-- [] 26-1: _Introdução ao TypeScript_
-- [] 26-2: _Tipagem Estática e Generics_
-- [] 26-3: _Express com TypeScript_
+- [ ] 26-1: _Introdução ao TypeScript_
+- [ ] 26-2: _Tipagem Estática e Generics_
+- [ ] 26-3: _Express com TypeScript_
 
 ### Bloco 27: Programação Orientada a Objetos (POO) e SOLID
 
