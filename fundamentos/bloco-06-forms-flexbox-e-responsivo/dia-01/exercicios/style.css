@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+fieldset {
+  width: 700px;
+  padding: 10px;
+}
+
+#nome-input,
+#email-input,
+#estado,
+#avatar,
+textarea,
+#data,
+#concordo1,
+#concordo2 {
+  margin-bottom: 10px;
+}
