@@ -3,19 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+ main {
+   width: 600px;
+   margin: 30px auto;
+   border: 1px solid #bbbbbb;
+   padding: 10px;
+ }
 
-fieldset {
-  width: 700px;
-  padding: 10px;
-}
 
-#nome-input,
-#email-input,
-#estado,
-#avatar,
-textarea,
-#data,
-#concordo1,
-#concordo2 {
-  margin-bottom: 10px;
-}
