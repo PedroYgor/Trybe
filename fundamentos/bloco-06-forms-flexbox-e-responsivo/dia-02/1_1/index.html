@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<style>
+    
+</style>
+</head>
+<body>
+    
+        <div class="col-md-3">
+                <div class="form-group">
+                    <label for="data-pagamento">Seu Datapicker</label>
+                    <div class="input-group date">
+                        <input type="text" id="data-pagamento" name="data_pagamento"
+                               value="{{ date('d/m/Y') }}"
+                               class="form-control"/>
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+          <div class='col-md-3'>
+            <div class="form-group">
+                <label for="data-pagamento">Datapicker novo</label>
+                <!-- Datepicker as text field -->         
+                <div class="input-group date" data-date-format="dd/mm/yyyy">
+                  <input  type="text" class="form-control" placeholder="dd/mm/yyyy">
+                  <div class="input-group-addon" >
+                    <span class="glyphicon glyphicon-th"></span>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Plugin pro Datapicker novo -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js'></script>
+    <script>
+     $('.input-group.date').datepicker({format: "dd/mm/yyyy"});
+    </script>
+    
+</body>
+</html>
