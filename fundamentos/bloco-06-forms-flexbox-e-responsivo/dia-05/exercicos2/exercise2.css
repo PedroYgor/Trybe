@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgb(26, 25, 25);
+  color: aliceblue;
+}
+
+@media screen and (max-width: 500px) {
+  h2 {
+    text-align: center;
+  }
+
+  header {
+    text-align: center;
+    padding: 5px;
+    background-color: darkslateblue;
+  }
+
+  header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+  }
+
+  header ul li {
+    padding: 5px;
+  }
+
+  .aside-one, .aside-two, .main-content, footer {
+    margin: 15px;
+  }
+
+  .aside-one ul, .aside-two ul{
+    margin-top: 10px;
+    list-style: none;
+    text-align: justify;
+    line-height: 25px;
+  }
+
+  .main-content p {
+    text-align: justify;
+    margin-top: 5px;
+    line-height: 25px;
+  }
+
+  footer h3 {
+    text-align: center;
+  }
+
+  footer p {
+    text-align: justify;
+    margin-top: 5px;
+    line-height: 25px;
+   }
+}
+
+@media screen and (max-width: 800px) {
+ 
+  header {
+    text-align: center;
+    padding: 15px;
+    background-color: darkslateblue;
+  }
+
+  header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+  }
+
+  header ul li {
+    padding: 5px;
+  }
+
+  .aside-one, .aside-two, .main-content, footer {
+    margin: 15px;
+  }
+  .aside-one ul, .aside-two ul{
+    margin-top: 10px;
+    list-style: none;
+    text-align: justify;
+    line-height: 25px;
+  }
+
+  .main-content p {
+    text-align: justify;
+    margin-top: 5px;
+    line-height: 25px;
+  }
+
+  footer h3 {
+    text-align: center;
+  }
+
+  footer p {
+    text-align: justify;
+    margin-top: 5px;
+    line-height: 25px;
+   }
+}
+
+@media screen and (min-width: 801px) {
+  header {
+    text-align: center;
+    padding: 15px;
+    background-color: darkslateblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+  }
+
+  header ul li {
+    padding: 5px;
+  }
+
+  .aside-one, .aside-two, .main-content, footer {
+    margin: 15px;
+  }
+  .aside-one ul, .aside-two ul{
+    margin-top: 10px;
+    list-style: none;
+    text-align: justify;
+    line-height: 25px;
+  }
+
+  .main-content p {
+    text-align: justify;
+    margin-top: 5px;
+    line-height: 25px;
+  }
+
+  footer h3 {
+    text-align: center;
+  }
+
+  footer p {
+    text-align: justify;
+    margin-top: 5px;
+    line-height: 25px;
+   }
+}
