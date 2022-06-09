@@ -42,11 +42,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
-- [ ] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
-- [ ] 6-3: _CSS Flebo - Part 1_
-- [ ] 6-4: _CSS Flebo - Part 2_
-- [ ] 6-5: _CSS Responsivo - Mobile First_
+- [x] 6-1: _HTML & CSS - Forms_
+- [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [x] 6-3: _CSS Flebo - Part 1_
+- [x] 6-4: _CSS Flebo - Part 2_
+- [x] 6-5: _CSS Responsivo - Mobile First_
 
 ### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários
 
