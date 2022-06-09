@@ -23,3 +23,21 @@ console.log(maiorPalavra('Antônio foi no banheirooooo e não sabemos o que acon
 // Parâmetro: "Bebeto"
 // Retorno: "Tryber Bebeto aqui!"
 // Um array com escopo global, que é o escopo do arquivo JS, nesse caso, contendo cinco strings com suas principais skills.
+const skills = ['HTML', 'CSS', 'JavaScript', 'Git', ':)']
+const string = 'Tryber x aqui!';
+
+const mudaPalavra = palavra => string.replace('x', palavra);
+// console.log(mudaPalavra('Bebeto'));
+const ordemAlfabetica = (f) => {
+  let retorno = f;
+  let skillsOrdenada = skills.sort();
+  return `${retorno}
+Minhas cinco habilidades são:
+  ${skillsOrdenada[0]}
+  ${skillsOrdenada[1]}
+  ${skillsOrdenada[2]}
+  ${skillsOrdenada[3]}
+  ${skillsOrdenada[4]}`;
+};
+
+console.log(ordemAlfabetica(mudaPalavra('Bebeto')));
