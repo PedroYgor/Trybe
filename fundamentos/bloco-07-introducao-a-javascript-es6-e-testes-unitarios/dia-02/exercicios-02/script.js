@@ -33,7 +33,7 @@ const order = {
     total: 60,
   },
 };
-console.log();
+
 
 // Complete a função customerInfo() para que seu retorno seja similar a "Olá Ana Silveira, entrega para: Rafael Andrade, Telefone: 11-98763-1416, R. Rua das Flores, Nº: 389, AP: 701".
 // 1
@@ -66,3 +66,4 @@ const orderModifier = (order) => {
 }
 
 console.log(orderModifier(order));
+console.log(order.order.delivery.deliveryPerson );

@@ -11,7 +11,7 @@ console.log(fatorial(5));
 
 const maiorPalavra = (frase) => {
   let palavras = frase.split(' ');
-  // return palavras.sort((a, b) => b.length - a.length)[0]; <- Funciona também, porém achei complexa pra quem tá lendo entender
+  // return palavras.sort((a, b) => b.length - a.length)[0]; <- Funciona também
   return palavras.reduce((acumulador, valorAtual) => acumulador.length < valorAtual.length ? acumulador = valorAtual : acumulador);
 };
 console.log(maiorPalavra('Antônio foi no banheirooooo e não sabemos o que aconteceu'));
@@ -31,13 +31,7 @@ const mudaPalavra = palavra => string.replace('x', palavra);
 const ordemAlfabetica = (f) => {
   let retorno = f;
   let skillsOrdenada = skills.sort();
-  return `${retorno}
-Minhas cinco habilidades são:
-  ${skillsOrdenada[0]}
-  ${skillsOrdenada[1]}
-  ${skillsOrdenada[2]}
-  ${skillsOrdenada[3]}
-  ${skillsOrdenada[4]}`;
+  return `${retorno} \nMinhas cinco habilidades são: \n${skillsOrdenada.join('\n')}`;
 };
 
 console.log(ordemAlfabetica(mudaPalavra('Bebeto')));
