@@ -20,7 +20,9 @@ const lesson3 = {
 
 // Crie uma função para adicionar o turno da noite na lesson2. Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
 // 1
-const novoAtributo = (obj, chave, valor) =>  obj[chave] = valor;
+function novoAtributo(obj, chave, valor) {
+  return obj[chave] = valor;
+}
 novoAtributo(lesson2, 'turno', 'noite');
 
 // Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
@@ -76,3 +78,4 @@ const verificaPares = (obj, chave, valor) => {
 
 console.log(verificaPares(lesson3, 'turno', 'noite'));
 // console.log(Object.entries);
+export default lesson1;
