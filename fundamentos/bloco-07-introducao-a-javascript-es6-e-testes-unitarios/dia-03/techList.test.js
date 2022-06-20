@@ -1,0 +1,2 @@
+const techList = require('./techList');
+
