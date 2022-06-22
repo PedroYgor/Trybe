@@ -1,3 +1,4 @@
+// 1
 const setNome = (nome) => ({nome: nome});
 const newEmployees = () => {
   const employees = {
@@ -21,3 +22,14 @@ const setEmail = (obj) => {
 };
 
 console.log(setEmail(newEmployees));
+
+// 2
+const generateNumber = () => Math.floor(Math.random() * 5 + 1);
+
+const guessNumber = (num, callback) => {
+  console.log(num, callback);
+  return num === callback ? 'Parabéns você ganhou' : 'Tente Novamente';
+
+}
+
+console.log(guessNumber(3, generateNumber()));
