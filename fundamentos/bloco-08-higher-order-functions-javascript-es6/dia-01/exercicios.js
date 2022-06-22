@@ -20,16 +20,35 @@ const setEmail = (obj) => {
   })
   return emails.join('\n');
 };
-
 console.log(setEmail(newEmployees));
 
 // 2
 const generateNumber = () => Math.floor(Math.random() * 5 + 1);
-
 const guessNumber = (num, callback) => {
   console.log(num, callback);
   return num === callback ? 'Parabéns você ganhou' : 'Tente Novamente';
 
 }
-
 console.log(guessNumber(3, generateNumber()));
+
+// 3
+const rightAnswers = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const studensAnswers = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+const countAnswers = (rightAnswers, studensAnswers) => {
+  let total = 0;
+  let count = 0;
+  studensAnswers.forEach((element) => {
+    if (element === 'N.A'){}
+    else if (element === rightAnswers[count]) total += 1;
+    else total -= 0.5;
+    count += 1;
+  })
+  return total;
+}
+const checkAnswers = (rightAnswers, studensAnswers, callback) => {
+  let result = callback(rightAnswers, studensAnswers);
+  if(result < 0) return 0;
+  return result;
+};
+
+console.log(checkAnswers(rightAnswers, studensAnswers, countAnswers));
