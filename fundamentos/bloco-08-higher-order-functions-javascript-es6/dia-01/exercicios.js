@@ -7,7 +7,17 @@ const newEmployees = () => {
   }
   return employees;
 };
-const obj = newEmployees();
-console.log(obj.id1.nome);
-console.log(obj.id2.nome);
-console.log(obj.id3.nome);
+
+const setEmail = (obj) => {
+  let keys = Object.keys(obj());
+  let objeto = obj();
+  let nomePersonalizado;
+  let emails = [];
+  keys.forEach((element) => {
+    nomePersonalizado = objeto[element].nome.replace(' ', '_').toLowerCase();
+    emails.push(`${nomePersonalizado}@trybe.com`);
+  })
+  return emails.join('\n');
+};
+
+console.log(setEmail(newEmployees));
