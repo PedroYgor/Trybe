@@ -36,12 +36,10 @@ const rightAnswers = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 const studensAnswers = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 const countAnswers = (rightAnswers, studensAnswers) => {
   let total = 0;
-  let count = 0;
-  studensAnswers.forEach((element) => {
+  studensAnswers.forEach((element, count) => {
     if (element === 'N.A'){}
     else if (element === rightAnswers[count]) total += 1;
     else total -= 0.5;
-    count += 1;
   })
   return total;
 }
