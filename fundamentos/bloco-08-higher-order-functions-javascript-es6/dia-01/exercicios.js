@@ -25,11 +25,11 @@ console.log(setEmail(newEmployees));
 // 2
 const generateNumber = () => Math.floor(Math.random() * 5 + 1);
 const guessNumber = (num, callback) => {
-  console.log(num, callback);
-  return num === callback ? 'Parabéns você ganhou' : 'Tente Novamente';
+  console.log(num, callback());
+  return num === callback() ? 'Parabéns você ganhou' : 'Tente Novamente';
 
 }
-console.log(guessNumber(3, generateNumber()));
+console.log(guessNumber(3, generateNumber));
 
 // 3
 const rightAnswers = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
