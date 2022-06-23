@@ -48,7 +48,7 @@ const damageMage = (obj) => {
   const minDamage = obj.mage.intelligence;
   const damage = Math.floor(Math.random() * (maxDamage - minDamage + 1) + minDamage);
   if (obj.mage.mana >= 15) {
-    obj.mage.mage -= 15;
+    obj.mage.mana -= 15;
     return { damage: damage, manaGasta: 15 };
   }
   return 'Não possui mana suficiente';
@@ -66,7 +66,8 @@ const gameActions = {
   },
   mageAtkDragon: (obj, damageMage) => {
     const infoMage = damageMage(obj);
-    obj.mage.damage = infoMage.damage;
+    mage.damage = infoMage.damage;
+    mage.mana -= infoMage.manaGasta;
     obj.dragon.healthPoints -= infoMage.damage;
   },
   dragonAtk: (obj, damageDragon) => {
@@ -75,18 +76,19 @@ const gameActions = {
     obj.mage.healthPoints -= damage;
     obj.warrior.healthPoints -= damage;
   }, 
-  infoBattle: (obj) => {
-    const mage = obj.mage;
-    const dragon = obj.dragon;
-    const warrior = obj.warrior;
-    const infoMage = `Mage: Health: ${mage.healthPoints}, damage: ${mage.damage}`;
-    const infoWarrior = `Warrior: Health: ${warrior.healthPoints}, damage: ${warrior.damage}`;
-    const infoDragon = `Dragon: Health: ${dragon.healthPoints}, damage: ${dragon.damage}`;
-    return console.log(`${infoMage}\n${infoWarrior}\n${infoDragon}`);
+  infoBattle: () => {
+    // const mage = obj.mage;
+    // const dragon = obj.dragon;
+    // const warrior = obj.warrior;
+    // const infoMage = `Mage: Health: ${mage.healthPoints}, damage: ${mage.damage}`;
+    // const infoWarrior = `Warrior: Health: ${warrior.healthPoints}, damage: ${warrior.damage}`;
+    // const infoDragon = `Dragon: Health: ${dragon.healthPoints}, damage: ${dragon.damage}`;
+    // return console.log(`${infoMage}\n${infoWarrior}\n${infoDragon}`);
+    return battleMembers;
   }
 };
 
 gameActions.warriorAtkDrangon(battleMembers, damageWarrior);
 gameActions.mageAtkDragon(battleMembers, damageMage);
 gameActions.dragonAtk(battleMembers, damageDragon);
-gameActions.infoBattle(battleMembers);
+console.log(gameActions.infoBattle());
