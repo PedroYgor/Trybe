@@ -1,4 +1,4 @@
-const books = require('./books');
+const books = require('./books.js');
 
 function smallerName(arr) {
   let nameBook = arr[0].name;
