@@ -32,7 +32,7 @@ const expectedResult = [
   }
 ];
 
-function fantasyOrScienceFiction() {
+function nameAndAge() {
   return books.map(item => {
     return {
       age: item.releaseYear - item.author.birthYear,
@@ -45,4 +45,4 @@ function fantasyOrScienceFiction() {
   });
 }
 
-console.log(fantasyOrScienceFiction());
+console.log(nameAndAge());
