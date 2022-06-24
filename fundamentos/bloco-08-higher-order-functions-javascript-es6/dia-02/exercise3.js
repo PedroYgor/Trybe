@@ -1,9 +1,10 @@
-const books = require('./books.js');
+const books = require('./books.js')
+// Encontre o primeiro livro cujo nome possui 26 caracteres.
 
 function getNamedBook(arr) {
- return arr.name.length === 26;
+  return arr.name.length === 26
 }
 
-const resultado = books.find(book => getNamedBook(book));
+const resultado = books.find(book => getNamedBook(book))
 
-console.log(resultado);
+console.log(resultado)
