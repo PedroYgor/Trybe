@@ -7,9 +7,10 @@ const expectedResult = [
 // 6 - Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
 function oldBooks() {
   return books.filter(item => {
-    
-    let idade = 2022 - item.releaseYear;
-    return idade > 60;
+    let currentYear = new Date();
+    let year = currentYear.getFullYear();
+    let bookAge = year - item.releaseYear;
+    return bookAge > 60;
   }).map(book => book.name);
 }
 
