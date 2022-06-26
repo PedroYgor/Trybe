@@ -1,6 +1,4 @@
-// Construa um array de objetos a partir do array de livros. Cada objeto deve conter uma propriedade author, com o nome da pessoa autora do livro, e uma propriedade age com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha considerando suas idades quando o livro foi lançado.
-
-const books = require("./books");
+const books = require('./books')
 const expectedResult = [
   {
     id: 1,
@@ -30,19 +28,21 @@ const expectedResult = [
     author: { name: 'Frank Herbert', birthYear: 1920 },
     releaseYear: 1965
   }
-];
-
+]
+// Construa um array de objetos a partir do array de livros. Cada objeto deve conter uma propriedade author, com o nome da pessoa autora do livro, e uma propriedade age com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha considerando suas idades quando o livro foi lançado.
 function nameAndAge() {
-  return books.map(item => {
-    return {
-      age: item.releaseYear - item.author.birthYear,
-      author: item.author.name,
-    }
-  }).sort((author1, author2) => {
-    if (author1.age > author2.age) return 1;
-    if(author1.age < author2.age) return -1;
-    return 0;
-  });
+  return books
+    .map(item => {
+      return {
+        age: item.releaseYear - item.author.birthYear,
+        author: item.author.name
+      }
+    })
+    .sort((author1, author2) => {
+      if (author1.age > author2.age) return 1
+      if (author1.age < author2.age) return -1
+      return 0
+    })
 }
 
-console.log(nameAndAge());
+console.log(nameAndAge())

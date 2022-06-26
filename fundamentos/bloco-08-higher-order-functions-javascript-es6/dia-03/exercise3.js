@@ -1,4 +1,4 @@
-const books = require("./books.js");
+const books = require('./books.js')
 // Resultado esperado
 const expectedResult = [
   {
@@ -29,12 +29,14 @@ const expectedResult = [
     author: { name: 'Frank Herbert', birthYear: 1920 },
     releaseYear: 1965
   }
-];
+]
 
 // Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia.
 // Dica: use a função filter;
 
 function fantasyOrScienceFiction() {
- return books.filter(item => (item.genre === 'Ficção Científica' || item.genre === 'Fantasia'));
+  return books.filter(
+    item => item.genre === 'Ficção Científica' || item.genre === 'Fantasia'
+  )
 }
-console.log(fantasyOrScienceFiction());
+console.log(fantasyOrScienceFiction())
