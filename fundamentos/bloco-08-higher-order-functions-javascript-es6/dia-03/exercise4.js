@@ -1,5 +1,5 @@
-const books = require('./books')
-
+const books = require('./books');
+/*
 const expectedResult = [
   {
     id: 6,
@@ -23,23 +23,25 @@ const expectedResult = [
     releaseYear: 1954
   }
 ]
-// Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
+*/
+// Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o
+// pelo livro mais velho.
 // Dica: use as funções filter e sort
 function oldBooksOrdered() {
   return books
-    .filter(item => {
-      let currentYear = new Date()
-      let year = currentYear.getFullYear()
-      let bookAge = year - item.releaseYear
-      return bookAge > 60
+    .filter((item) => {
+      const currentYear = new Date();
+      const year = currentYear.getFullYear();
+      const bookAge = year - item.releaseYear;
+      return bookAge > 60;
     })
     .sort((bookA, bookB) => {
-      if (bookA.releaseYear < bookB.releaseYear) return -1
-      if (bookA.releaseYear > bookB.releaseYear) return 1
-      return 0
-    })
+      if (bookA.releaseYear < bookB.releaseYear) return -1;
+      if (bookA.releaseYear > bookB.releaseYear) return 1;
+      return 0;
+    });
 }
 
-console.log(oldBooksOrdered())
+console.log(oldBooksOrdered());
 
-module.exports = oldBooksOrdered
+module.exports = oldBooksOrdered;
