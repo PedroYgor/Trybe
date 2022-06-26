@@ -27,7 +27,9 @@ const books = require("./books");
 // Dica: use as funções filter e sort
 function oldBooksOrdered() {
   return books.filter(item => {
-    let idade = 2022 - item.releaseYear;
+    let currentYear = new Date();
+    let year = currentYear.getFullYear();
+    let idade = year - item.releaseYear;
     return idade > 60;
   }).sort((bookA, bookB) => {
     if (bookA.releaseYear < bookB.releaseYear) return -1;
@@ -37,3 +39,5 @@ function oldBooksOrdered() {
 }
 
 console.log(oldBooksOrdered());
+
+module.exports = oldBooksOrdered;
