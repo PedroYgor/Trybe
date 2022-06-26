@@ -1,15 +1,15 @@
-const books = require('./books.js')
+const books = require('./books');
 // Retorne o nome do livro de menor nome.
 // Dica: use a função forEach.
 
 function smallerName(arr) {
-  let nameBook = arr[0].name
-  arr.forEach(element => {
+  let nameBook = arr[0].name;
+  arr.forEach((element) => {
     if (element.name.length < nameBook.length) {
-      nameBook = element.name
+      nameBook = element.name;
     }
-  })
-  return nameBook
+  });
+  return nameBook;
 }
 
-console.log(smallerName(books))
+console.log(smallerName(books));
