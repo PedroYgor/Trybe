@@ -4,25 +4,28 @@ const URL = 'https://api.coincap.io/v2/assets';
 const armazenarMoedas = (data) => {
   return data.filter((crypto, index) => index < 20);
 }
+
 const getCrypto = async () => {
-  const cryptos= await fetch(URL)
-    .then((response) => response.json())
-    .then(({ data }) => armazenarMoedas(data));
-    return cryptos;
+  const response = await fetch(URL)
+  const data = await response.json();
+  const cryptos = await data.data;
+  return cryptos;
 };
+
 const convertToBrl = async () => {
-  // const symbolLowerCase = symbol.toLowerCase();
-  // const urlForConversion = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${symbolLowerCase}/brl.json`;
   const urlForConversion = 
     'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.min.json';
-  const value = await fetch(urlForConversion)
-    .then((response) => response.json())
-    .then(({ usd: { brl } }) => Number(brl));
-    return value;
+  const response = await fetch(urlForConversion)
+  const data = await response.json();
+  const { usd: { brl }} = await data;
+  const value =  Number(brl);
+  return value;
 };
+
 const insertTable = async (name, rank, priceUsd, symbol) => {
   const brl = await convertToBrl(symbol);
   const convertValue = priceUsd * brl;
+
   const tr = document.createElement('tr');
   const thRank = document.createElement('th');
   const tdName = document.createElement('td');
@@ -43,6 +46,7 @@ const insertTable = async (name, rank, priceUsd, symbol) => {
 
   tBody.appendChild(tr);
 };
+
 const showCrypto = async () => {
   const cryptos = await getCrypto();
   await cryptos.forEach(({ name, rank, priceUsd, symbol }) => {
