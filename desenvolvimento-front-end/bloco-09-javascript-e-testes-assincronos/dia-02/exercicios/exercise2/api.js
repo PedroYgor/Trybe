@@ -6,20 +6,28 @@ const armazenarMoedas = (data) => {
 }
 
 const getCrypto = async () => {
-  const response = await fetch(URL)
-  const data = await response.json();
-  const cryptos = await data.data;
-  return cryptos;
+  try {
+    const response = await fetch(URL)
+    const data = await response.json();
+    const cryptos = await data.data;
+    return armazenarMoedas(cryptos);
+  } catch (error) {
+    return console.log(error);
+  }
 };
 
 const convertToBrl = async () => {
-  const urlForConversion = 
+  try {
+    const urlForConversion = 
     'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.min.json';
-  const response = await fetch(urlForConversion)
-  const data = await response.json();
-  const { usd: { brl }} = await data;
-  const value =  Number(brl);
+    const response = await fetch(urlForConversion)
+    const data = await response.json();
+    const { usd: { brl }} = await data;
+    const value =  Number(brl);
   return value;
+  } catch (error) {
+    return console.log(error);
+  }
 };
 
 const insertTable = async (name, rank, priceUsd, symbol) => {
