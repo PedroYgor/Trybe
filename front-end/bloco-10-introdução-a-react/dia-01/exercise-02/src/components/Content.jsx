@@ -26,15 +26,15 @@ export class Content extends Component{
     ];
     const frase = conteudos.map((conteudo) => {
      return (
-      <ul>
-        <li>Conteúdo: {conteudo.conteudo}</li>
-        <li>Status: {conteudo.status}</li>
-        <li>Bloco: {conteudo.bloco}</li>
-      </ul>
+      <div>
+        <p>Conteúdo: {conteudo.conteudo}</p>
+        <p>Status: {conteudo.status}</p>
+        <p>Bloco: {conteudo.bloco}</p>
+      </div>
      ) 
     });
     return (
-      <div className="content">{frase}</div>
+      <ul className="content">{frase}</ul>
     )
   }
 }
