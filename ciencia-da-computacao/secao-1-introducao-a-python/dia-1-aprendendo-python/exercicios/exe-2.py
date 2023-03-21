@@ -1,5 +1,5 @@
-def average(list: list) -> float:
-    return sum(list) / len(list)
+def calculate_average(numbers: list[int]) -> float:
+    return sum(numbers) / len(numbers)
 
 
-print(average([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+print(calculate_average([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
