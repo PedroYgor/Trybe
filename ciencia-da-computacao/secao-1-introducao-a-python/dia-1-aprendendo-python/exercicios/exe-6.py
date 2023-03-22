@@ -9,8 +9,8 @@ def check_type_of_triangle(a: int, b: int, c: int) -> str:
             return "Isósceles"
         else:
             return "Escaleno"
-    else:
-        return "não é triangulo"
+
+    return "não é triangulo"
 
 
 print(check_type_of_triangle(3, 3, 3))  # Equilátero
