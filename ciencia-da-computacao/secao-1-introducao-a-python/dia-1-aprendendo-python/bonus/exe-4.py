@@ -27,8 +27,10 @@ def calcula_preco_combustivel(litros, tipo_combustivel):
         else:
             desconto = 0.06 if tipo_combustivel == "G" else 0.05
 
-    preco_total = litros * preco * (1 - desconto)
-    return preco_total
+        preco_total = litros * preco * (1 - desconto)
+        return preco_total
+
+    return "Tipo de combustível inválido"
 
 
 print(calcula_preco_combustivel(20, "G"))
